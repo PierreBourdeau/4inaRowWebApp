@@ -1,0 +1,11 @@
+<div class="main-container">
+    <div id="gameboard" data-rows="<%= nbOfLines%>" data-cols="<%= nbOfLines %>">
+        <% for(let i = 1; i <= nbOfCol; i++) {%>
+        <div class="gameboard-col" id="col-<%=i%>" data-id="<%=i%>" onclick="game.play(this)" onmouseover="game.colHover(this)">
+            <% for(let j = 1; j <= nbOfLines; j++) { %>
+            <div data-filled="0" class="gameboard-cell" id="<%= ((i-1) * nbOfCol) + j %>"><div class="cell-content"><%= ((i-1) * nbOfCol) + j %></div></div>
+            <% } %>
+        </div>
+        <% } %>
+    </div>
+</div>

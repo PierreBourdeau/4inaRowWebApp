@@ -1,0 +1,19 @@
+﻿<!DOCTYPE html >
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>4inARow</title>
+    <link href="style/style.css" rel="stylesheet" />
+</head>
+<body>
+    <main class="page">
+        <%- include('partials/top-nav-bar'); %>
+        <div id="page-content"><%- include('partials/menu'); %></div>
+    </main>
+    <%- include('partials/modal-menu'); %>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="controllers/logic.js"></script>
+    <script src="controllers/theming.js"></script>
+    <script src="controllers/menu.js"></script>
+</body>
+</html>
